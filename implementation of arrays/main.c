@@ -52,8 +52,8 @@ void delete1() {
         return;
     }
 
-    for (loop = place - 1; loop < num - 1; loop++) {
-        arr[loop] = arr[loop + 1];
+    for (loop = place; loop < num ; loop++) {
+        arr[loop-1] = arr[loop];
     }
 
     num--;
